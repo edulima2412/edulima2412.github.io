@@ -1,25 +1,16 @@
 # Portfólio Pessoal ⚡️ 
 
-![GitHub stars](https://img.shields.io/github/stars/edulima2412/portfolio) 
-![GitHub forks](https://img.shields.io/github/forks/edulima2412/portfolio)
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/edulima2412/portfolio/commits/master)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://edulima2412.github.io/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://edulima2412.github.io" target="_blank"><img src="/assets/img/preview.gif">
-  </a>
-  </kbd>
-</p>
+![Image](https://github.com/user-attachments/assets/2f1efd81-4ea3-402a-9829-902bfa3e235c)
 
 :star: Se puder me dar estrela no GitHub — Ajuda!
 
 ## Características 📋
-⚡️ Totalmente responsivo\
-⚡️ Válido HTML5 & CSS3\
-⚡️ Animação de digitação usando `Typed.js`\
+⚡️ Válido HTML5 & CSS3
 ⚡️ Fácil de modificar
 
 ## Instalação e Implantação 📦
@@ -32,15 +23,12 @@
 ## Seções 📚
 ✔️ Bio\
 ✔️ Experiência\
-✔️ Projetos\
 ✔️ Habilidades\
 ✔️ Educação\
-✔️ Resumo
+✔️ Contato
 
 ## Ferramentas utilizadas 🛠️
 * [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
-* [<b>Materialize</b>](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
-* [<b>Typed.js</b>](https://mattboldt.com/demos/typed-js/) - JavaScript Library
 
 ## Contribuição 💡
 #### Passo 1
