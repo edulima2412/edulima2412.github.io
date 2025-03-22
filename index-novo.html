@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Biografia</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="profile-container">
+        <img
+          class="profile-img"
+          src="./assets/img/perfil.png"
+          alt="Foto de Perfil"
+        />
+        <p class="name">Eduardo Lima</p>
+      </div>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="bio">
+        <h2>Bio</h2>
+        <p id="bio-text">
+          <!-- O conteúdo será atualizado pelo JavaScript -->
+        </p>
+      </section>
+      <section id="experiencia">
+        <h2>Experiência</h2>
+        <div class="experiencia-conteudo">
+          <div class="experiencia-item">
+            <h3>Conexia Educação</h3>
+            <span class="cargo">Especialista</span>
+            <span class="periodo">Jul/24 – Atual</span>
+            <ul>
+              <li>
+                Desenvolvedor Sênior e Tech Lead, liderando a integração com
+                diversos parceiros educacionais, migração de serviços e
+                reestruturação de APIs.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Compass UOL</h3>
+            <span class="cargo">Engenheiro de Software</span>
+            <span class="periodo">Jun/21 – Jun/24</span>
+            <ul>
+              <li>
+                Liderança técnica no desenvolvimento e manutenção do aplicativo
+                da Pague Menos.
+              </li>
+              <li>
+                Tecnologias: .NET (3.1/5), Amazon AWS (CloudFormation, Aurora,
+                API Gateway), Docker/Kubernetes, Azure DevOps/Git.
+              </li>
+              <li>
+                Atuei como Desenvolvedor Sênior e Tech Lead na Conexia,
+                liderando a integração com produtos Google e educacionais,
+                internacionalização, migração de serviços e reestruturação de
+                APIs.
+              </li>
+              <li>
+                Tecnologias utilizadas: .NET (2.2/3.1/5/6), Identity Server,
+                JWT, OAuth2, microserviços, Dapper/Entity Framework, RESTful,
+                Hangfire, MQTT, CQRS, Docker/Kubernetes, Amazon AWS, Google
+                Cloud Platform, SQL Server/MariaDB, Scrum/Jira, Bitbucket/Git.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Indra</h3>
+            <span class="cargo">Engenheiro de Software</span>
+            <span class="periodo">Abr/21 – Jun/21</span>
+            <ul>
+              <li>
+                Atuação no tratamento de vulnerabilidades de sistemas web.
+              </li>
+              <li>
+                Tecnologias utilizadas: .NET Framework 4.5, PLSQL (Oracle),
+                Angular 7, MVC e TFS, com metodologia Scrum.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experiencia-item">
+            <h3>Farmácias Pague Menos</h3>
+            <span class="cargo">Programador Pleno .NET</span>
+            <span class="periodo">Jun/19 – Abr/21</span>
+            <ul>
+              <li>
+                Liderança técnica em automação de processos, utilizando IBM BPM
+                e Pentaho Data Integration.
+              </li>
+              <li>
+                Desenvolvimento de Web APIs com .NET Core e .NET Framework.
+              </li>
+              <li>
+                Experiência com bancos de dados SQL Server, PostgreSQL e DB2.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="skills-category">
+          <h3>Linguagens | Bancos de Dados</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <label for="linguagens">Linguagens</label>
+              <progress id="linguagens" value="2" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="bancos-de-dados">Bancos de Dados</label>
+              <progress id="bancos-de-dados" value="3" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="sql">SQL</label>
+              <progress id="sql" value="3" max="3"></progress>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Bibliotecas | Frameworks</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <label for="bibliotecas">Bibliotecas</label>
+              <progress id="bibliotecas" value="2" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="frameworks">Frameworks</label>
+              <progress id="frameworks" value="1" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="nodejs">Node.js</label>
+              <progress id="nodejs" value="2" max="3"></progress>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Outros</h3>
+          <div class="skills-container">
+            <div class="skill">
+              <label for="git">Git</label>
+              <progress id="git" value="3" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="docker">Docker</label>
+              <progress id="docker" value="1" max="3"></progress>
+            </div>
+            <div class="skill">
+              <label for="linux">Linux</label>
+              <progress id="linux" value="2" max="3"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="educacao">
+        <h2>Educação</h2>
+        <div class="educacao-conteudo">
+          <p>
+            Sou graduado em Tecnólogo em Análise e Desenvolvimento de Sistemas
+            pela <strong>FAC - Faculdade Cearense</strong>, Fortaleza/CE.
+            Durante a minha formação, tive a oportunidade de aprender diversos
+            conceitos essenciais para o mundo da tecnologia, proporcionando uma
+            base sólida para minha carreira como desenvolvedor.
+          </p>
+          <h3>Cursos</h3>
+          <div class="cursos">
+            <div class="coluna">
+              <ul>
+                <li>Estrutura de Dados e Algoritmos</li>
+                <li>Programação Orientada a Objetos</li>
+                <li>Sistemas Operacionais</li>
+                <li>Banco de Dados</li>
+              </ul>
+            </div>
+            <div class="coluna">
+              <ul>
+                <li>Redes de Computadores</li>
+                <li>Desenvolvimento Web</li>
+                <li>Desenvolvimento Ágil</li>
+                <li>Arquitetura de Software</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3>Certificações</h3>
+        <ul class="certificacoes">
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>AWS Partner Accreditation (Technical)</li>
+          <li>AWS Partner Cloud Economics Accreditation</li>
+          <li>AI-Assisted Certified Professional</li>
+          <li>Fundamentos na Lei Geral de Proteção de Dados - LGPD</li>
+          <li>Scrum Foundation Professional Certificate</li>
+          <li>DevOps Essentials Professional Certificate</li>
+          <li>Scrum Fundamentals Certified</li>
+        </ul>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <div class="contact-content">
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/eduardolima"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+              <!-- Ícone LinkedIn -->
+            </a>
+            <a
+              href="https://github.com/eduardolima"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-github"></i>
+              <!-- Ícone GitHub -->
+            </a>
+            <a
+              href="https://twitter.com/eduardolima"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-twitter"></i>
+              <!-- Ícone Twitter -->
+            </a>
+            <a
+              href="https://www.instagram.com/eduardolima"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-instagram"></i>
+              <!-- Ícone Instagram -->
+            </a>
+            <a
+              href="https://www.facebook.com/eduardolima"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-facebook"></i>
+              <!-- Ícone Facebook -->
+            </a>
+            <a
+              href="mailto:eduardo.lima@email.com"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fas fa-envelope"></i>
+              <!-- Ícone Email -->
+            </a>
+          </div>
+          <a
+            href="https://drive.google.com/your-cv-link"
+            target="_blank"
+            class="cv-download"
+          >
+            <i class="fas fa-download"></i> Download do CV
+            <!-- Ícone Download -->
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé dentro do Main -->
+    <footer>
+      <p>
+        Desenvolvido por <strong>Eduardo Lima</strong> &copy;
+        <span id="year"></span> - Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("nav ul li a");
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(link.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Inserir ano atual no rodapé
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const birthYear = 1989;
+      const startYear = 2018;
+
+      // Calcular idade atual
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - birthYear;
+
+      // Calcular tempo de experiência
+      const experienceYears = currentYear - startYear;
+
+      // Atualizar a bio
+      const bioText = `
+    Olá, eu sou o <span class="name">Eduardo</span>! Tenho ${age} anos e sou apaixonado por programação desde <span class="year">2018</span>. 💻
+    Minha experiência começou com backend, especialmente com <span class="tech">.NET</span>, mas agora estou me aprofundando no frontend, principalmente com React. 🚀
+    Moro com minha esposa e tenho dois gatos, o Chip 😺 e a Lua 🐱, que são uma parte muito importante da minha vida.
+    Sou <span class="faith">cristão</span> e vivo minha fé com alegria 🙏. Além disso, pratico esportes como <span class="fitness">corrida</span> 🏃‍♂️ e <span class="fitness">crossfit</span> 🏋️‍♂️, que me ajudam a manter o equilíbrio entre mente e corpo.
+    Sou fã de jogos digitais, especialmente MMO, MMORPG e MOBA 🎮. Quando não estou jogando, estou ouvindo música – adoro <span class="music">Pop</span>, <span class="music">Eletrônica</span> e <span class="music">Gospel</span> 🎵.
+    Nascido e criado em Fortaleza-CE 🌅, onde o calor e as boas vibrações sempre estão presentes!
+  `;
+
+      document.querySelector("#bio-text").innerHTML = bioText;
+    });
+  </script>
+</html>
