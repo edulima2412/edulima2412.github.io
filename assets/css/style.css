@@ -1,32 +1,17 @@
-/* Estilo geral */
+/* Normalizar a fonte em toda a página */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo do Body */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Winky Sans", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: #f4f7fa;
-}
-
-/* Estilo do Nav */
-nav {
-  width: 250px;
-  background-color: rgba(51, 51, 51); /* Transparência ajustada */
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  z-index: 10;
 }
 
 /* Estilo da imagem e do nome */
@@ -52,7 +37,22 @@ nav {
   text-transform: uppercase;
 }
 
-/* Estilo da lista do menu */
+/* Estilo do Nav */
+nav {
+  width: 250px;
+  background-color: rgba(51, 51, 51, 0.9); /* Transparência ajustada */
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 10;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -67,13 +67,14 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 12px 16px; /* Aumentando o padding para aumentar a área clicável */
   display: block;
   border-radius: 5px;
   transition: background-color 0.3s;
   max-width: 200px;
   width: 100%;
   margin: 0 auto;
+  font-size: 1.1rem; /* Aumentando o tamanho da fonte no menu de navegação */
 }
 
 nav ul li a:hover {
@@ -100,16 +101,17 @@ main {
   padding-bottom: 60px; /* Espaço para o rodapé */
   box-sizing: border-box;
   overflow: hidden;
+  width: 100%; /* Garante que o main ocupe toda a largura disponível */
 }
 
-/* Estilo dos Cards */
+/* Aumentar a largura das seções */
 section {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px; /* Aumentando a largura máxima das seções */
   padding: 25px;
   transition: transform 0.3s ease;
 }
@@ -120,7 +122,7 @@ section:hover {
 
 /* Título das seções */
 section h2 {
-  font-size: 2rem;
+  font-size: 2.2rem; /* Aumentando o tamanho da fonte dos títulos */
   color: #333;
   margin-bottom: 15px;
   font-weight: bold;
@@ -139,7 +141,6 @@ section h2 {
   margin: 20px auto;
   max-width: 800px;
   text-align: justify;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Destacar seções dentro da bio */
@@ -167,7 +168,7 @@ section h2 {
   color: #32cd32; /* Cor verde para fé */
 }
 
-/* Estilos específicos para a seção de Experiência */
+/* Estilo para as seções de experiência */
 #experiencia {
   background-color: #fff;
   padding: 20px;
@@ -188,6 +189,7 @@ section h2 {
   gap: 20px;
 }
 
+/* Estilo dos itens de experiência */
 .experiencia-item {
   background-color: #f9f9f9;
   padding: 15px;
@@ -219,7 +221,7 @@ section h2 {
   color: #555;
 }
 
-/* Estilo das categorias de habilidades */
+/* Estilo para as categorias de habilidades */
 .skills-category {
   margin-bottom: 30px;
 }
@@ -248,70 +250,30 @@ section h2 {
 /* Estilo para a seção de Educação */
 #educacao {
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  max-width: 800px;
-  margin: 30px auto;
-  text-align: justify;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
-/* Título da seção */
 #educacao h2 {
   font-size: 2rem;
+  margin-bottom: 20px;
   color: #333;
+  text-align: center;
+}
+
+#educacao h3 {
+  font-size: 1.6rem;
   margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-bottom: 2px solid #76c7c0;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  color: #333;
 }
 
-/* Estilo do parágrafo com texto justificado */
-#educacao p {
-  font-size: 1rem;
-  line-height: 1.8;
+#educacao .educacao-conteudo p {
+  font-size: 1.2rem;
   color: #555;
-  text-align: justify;
+  line-height: 1.6;
   margin-bottom: 20px;
-}
-
-/* Estilo da lista de cursos e conteúdos relevantes */
-#educacao ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
-
-#educacao ul li {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 10px;
-  line-height: 1.8;
-  text-align: left;
-  padding-left: 20px;
-  position: relative;
-}
-
-#educacao ul li strong {
-  color: #76c7c0; /* Destacar a instituição e o título do curso */
-  font-weight: bold;
-}
-
-#educacao ul li .year {
-  font-style: italic;
-  color: #888;
-}
-
-#educacao ul li::before {
-  content: "•"; /* Adiciona um marcador de lista personalizado */
-  position: absolute;
-  left: 0;
-  color: #76c7c0;
-  font-size: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 /* Estilo dos Cursos */
@@ -384,13 +346,6 @@ progress[value="2"] {
 
 progress[value="3"] {
   background-color: #76c7c0;
-}
-
-/* Ajuste de labels de habilidades */
-.skill label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 5px;
 }
 
 /* Estilo do Rodapé fora do Main */
